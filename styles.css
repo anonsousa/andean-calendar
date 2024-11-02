@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e4e8f1; /* Cor de fundo suave semelhante ao Microsoft Teams */
+    color: #333; /* Cor do texto mais escura */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    max-width: 900px; /* Largura máxima para maior conforto */
+    width: 100%;
+}
+
+#calendar {
+    width: 100%; /* Define a largura total do calendário */
+    height: 800px; /* Define uma altura fixa para o calendário */
+    margin: 20px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    font-size: 18px;
+}
+
+.fc {
+    font-size: 18px; /* Aumenta a fonte para todos os elementos do calendário */
+}
+
+.fc-daygrid-event {
+    border-radius: 5px;
+    padding: 5px; /* Adiciona espaçamento interno aos eventos */
+}
+
+.fc-daygrid-event:hover {
+    background-color: #ffcc00; /* Muda a cor ao passar o mouse */
+    transition: background-color 0.3s ease; /* Efeito de transição suave */
+}
+
+.resultado {
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.9); /* Leve transparência */
+    padding: 20px; /* Aumenta o padding para melhor visualização */
+    border-radius: 8px;
+    min-height: 60px; /* Aumenta a altura mínima para acomodar o texto */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease; /* Transição suave */
+}
+
+.tooltip {
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    display: none;
+    z-index: 10;
+    white-space: nowrap; /* Impede a quebra de linha no tooltip */
+}

@@ -61,3 +61,16 @@ body {
     z-index: 10;
     white-space: nowrap; /* Impede a quebra de linha no tooltip */
 }
+
+.flags {
+    display: flex;
+    justify-content: center; /* Centraliza as bandeiras */
+    margin-top: 20px; /* Espaçamento acima das bandeiras */
+}
+
+.flags img {
+    max-width: 50px; /* Use max-width para manter a proporção */
+    height: auto; /* Mantém a proporção correta */
+    margin: 0 5px; /* Espaçamento horizontal entre as bandeiras */
+}
+
